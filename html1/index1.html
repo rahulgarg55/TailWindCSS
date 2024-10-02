@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specifies the character encoding -->
+    <meta charset="UTF-8">
+    
+    <!-- Enables responsive design by setting the viewport width equal to the device width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- The title that appears in the browser tab -->
+    <title>Tailwind CSS Landing Page</title>
+    
+    <!-- Linking Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-100">
+    <!-- Setting the default font family and background color for the page -->
+    
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <!-- 'container' centers the content, 'mx-auto' sets horizontal margin to auto, 'px-6' and 'py-4' add padding to the X and Y axes -->
+            
+            <div class="flex justify-between items-center">
+                <!-- 'flex' sets up flexbox layout, 'justify-between' separates items, 'items-center' aligns items vertically in the center -->
+
+                <!-- Brand Name -->
+                <a href="#" class="text-gray-800 text-xl font-bold">MyWebsite</a>
+                <!-- 'text-gray-800' sets the text color, 'text-xl' defines the font size, 'font-bold' makes the text bold -->
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex space-x-6">
+                    <!-- 'hidden' hides the links on small screens, 'md:flex' makes them appear on medium screens and larger, 'space-x-6' adds horizontal spacing between the items -->
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Features</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Pricing</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Contact</a>
+                    <!-- 'text-gray-600' sets the default text color, 'hover:text-blue-600' changes the color when hovered -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-500 text-white py-20">
+        <!-- 'bg-blue-500' sets the background color, 'text-white' sets the text color, 'py-20' adds vertical padding -->
+        
+        <div class="container mx-auto px-6 text-center">
+            <!-- Centers the content and adds padding -->
+
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to MyWebsite</h1>
+            <!-- 'text-4xl' sets the font size for small screens, 'md:text-6xl' sets the size for medium and larger screens, 'font-bold' makes the text bold, 'mb-4' adds margin-bottom -->
+            
+            <p class="text-lg md:text-xl mb-8">Build modern websites with ease using Tailwind CSS</p>
+            <!-- 'text-lg' sets the font size, 'md:text-xl' increases it for medium and larger screens, 'mb-8' adds margin-bottom -->
+            
+            <a href="#" class="bg-white text-blue-500 py-3 px-6 rounded-full shadow-lg hover:bg-blue-100">Get Started</a>
+            <!-- 'bg-white' sets the button background color, 'text-blue-500' defines the text color, 'py-3 px-6' adds padding, 'rounded-full' creates a circular button, 'shadow-lg' adds a shadow, 'hover:bg-blue-100' changes the background color on hover -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <!-- 'bg-gray-800' sets the background color, 'text-white' defines the text color, 'py-6' adds vertical padding -->
+        
+        <div class="container mx-auto px-6 text-center">
+            <!-- 'container' centers the content, 'px-6' adds horizontal padding, 'text-center' aligns text to the center -->
+
+            <p class="text-sm">&copy; 2024 MyWebsite. All rights reserved.</p>
+            <!-- 'text-sm' sets the font size to small -->
+        </div>
+    </footer>
+</body>
+</html>
