@@ -1,0 +1,132 @@
+<!-- This is the main HTML file for a responsive landing page. It includes a navbar with a brand name and navigation links, a hero section with a background image and a call-to-action button, a services section highlighting the company's offerings, a testimonials section showcasing client feedback, and a footer with a copyright notice.
+
+The code uses Tailwind CSS for styling and includes responsive design elements to ensure the layout adapts to different screen sizes. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Landing Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between">
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-800 text-xl font-bold py-4"
+              >BrandName</a
+            >
+            <div class="hidden md:flex space-x-4">
+              <a href="#" class="py-4 px-2 text-gray-700">Home</a>
+              <a href="#" class="py-4 px-2 text-gray-700">About</a>
+              <a href="#" class="py-4 px-2 text-gray-700">Services</a>
+              <a href="#" class="py-4 px-2 text-gray-700">Contact</a>
+            </div>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button class="mobile-menu-button text-gray-700">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-cover bg-center h-screen bg-blue-600"
+      style="
+        background-image: url('https://source.unsplash.com/featured/?technology');
+      "
+    >
+      <div
+        class="flex items-center justify-center h-full bg-gray-900 bg-opacity-50"
+      >
+        <div class="text-center">
+          <h1 class="text-white text-5xl font-bold">Welcome to Our Website</h1>
+          <p class="text-gray-300 mt-4">
+            We provide the best services for your business needs
+          </p>
+          <a
+            href="#"
+            class="mt-6 inline-block bg-yellow-500 text-white py-3 px-6 rounded-lg text-lg"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-12 bg-white">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-bold">Our Services</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+          <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold">Web Development</h3>
+            <p class="mt-4 text-gray-600">
+              We build modern and responsive websites.
+            </p>
+          </div>
+          <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold">Digital Marketing</h3>
+            <p class="mt-4 text-gray-600">
+              Boost your business with our marketing services.
+            </p>
+          </div>
+          <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold">Graphic Design</h3>
+            <p class="mt-4 text-gray-600">
+              Creative and professional design solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-12 bg-gray-100">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-bold">What Our Clients Say</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+          <div class="p-6 bg-white rounded-lg shadow-lg">
+            <p class="text-gray-600">"Fantastic service and support!"</p>
+            <h3 class="mt-4 text-xl font-semibold">John Doe</h3>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow-lg">
+            <p class="text-gray-600">"They exceeded our expectations!"</p>
+            <h3 class="mt-4 text-xl font-semibold">Jane Smith</h3>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow-lg">
+            <p class="text-gray-600">"Highly recommend their services."</p>
+            <h3 class="mt-4 text-xl font-semibold">Robert Brown</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6">
+      <div class="max-w-7xl mx-auto text-center">
+        <p class="text-gray-400">© 2024 Company Name. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
